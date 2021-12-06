@@ -40,6 +40,11 @@ print(firstName, "is learning Python")
 favoriteColor = input("What is your favorite color?  ")
 print("The color", favoriteColor, "is a great color!")
 
+# Using the input function / Enter
+print("Hello")
+input('Press Enter to see Step 1.')
+print("Step 1:     ")
+
 # Suppressing the print Function's Ending Newline p. 65 book
     # if you dont want a new line to start after the print function is complete you can:
     # the end=' ' arguement specifies that the print function should print a space
@@ -301,6 +306,24 @@ yell("Don't Repeat Yourself. Keep things DRY.")
 
     #Remember, methods are just owned functions. Our string "You are doing great" owns the method/function .upper
 _________________________________________________________________________
+
+# Creating and Calling Functions with Main function
+
+def main():
+	number = 5
+	show_double(number)
+
+# The show_double function accepts an argument
+# and displays double its value.
+
+def show_double(number):
+	result = number * 2
+	print(result)
+
+# Call the main function.
+main()
+
+__________________________________________________________________________
 
 # Check Please
 
