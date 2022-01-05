@@ -5,7 +5,7 @@
     <ProjectGuid>dedea458-9d7c-4f37-b781-57d5a0811029</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>Ch3Exercise3.py</StartupFile>
+    <StartupFile>module5.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -40,10 +40,22 @@
     <Compile Include="EvenOddNumbers.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Ch3Exercise4.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="module2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="module3.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="module4.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="FunctionMainWhileLoopsPractice.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="module5.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="RedoMainTipCalc.py">
