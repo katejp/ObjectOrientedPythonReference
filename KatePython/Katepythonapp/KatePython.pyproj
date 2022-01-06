@@ -5,7 +5,7 @@
     <ProjectGuid>dedea458-9d7c-4f37-b781-57d5a0811029</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>module5.py</StartupFile>
+    <StartupFile>module1.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +22,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Ch4Ex1.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WhileLoop.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="MasterTicket.py">
@@ -43,19 +49,10 @@
     <Compile Include="Ch3Exercise4.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="module2.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="module3.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="module4.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="FunctionMainWhileLoopsPractice.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="module5.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="RedoMainTipCalc.py">
