@@ -5,7 +5,7 @@
     <ProjectGuid>dedea458-9d7c-4f37-b781-57d5a0811029</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>RockPaperScissors.py</StartupFile>
+    <StartupFile>module1.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,6 +26,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Ch4Exercise2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="module1.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="RockPaperScissors.py">
