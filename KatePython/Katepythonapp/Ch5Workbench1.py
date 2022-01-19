@@ -17,5 +17,6 @@ main()
 # If 101 is entered "Sorry!" statement is written and user is prompted to enter a 
 # new number, but the computer still tries to calculate the input and gives the product
 # as 1010
+# WHOOPS: The loop should iterate as long as product is less than 100
 
 
