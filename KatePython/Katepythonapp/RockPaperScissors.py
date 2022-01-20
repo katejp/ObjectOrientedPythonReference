@@ -1,6 +1,8 @@
 import random
 
 def main():
+	player_wins = 0
+	ai_wins = 0
 	user_number = DisplayMenu()
 	if user_number == 1:
 		user_answer_1, ai_answer_1 = PlayBestOf3()
@@ -20,22 +22,42 @@ def DisplayMenu():
 	return number
 
 def PlayBestOf3():
+	rounds_played = 0
+	player_round_wins = 0
+	ai_round_wins = 0
 	print("Game Instructions: Rock beats Scissors, Paper beats Rock, Scissors beats Paper.")
 	print("Enter 1- Rock, 2- Paper, 3- Scissors")
+	
+	while player_round_wins != 2 or ai_round_wins != 2:
+
+		# Play Round 
+		PlayRound()
+
+		# Display Result- modify rounds variables in playbestof3 function
+	#check playbestof3 variables for who wins- modify main function variables
+	
+
+
+def PlayRound():
+	
 	answer_1 = int(input("Enter number:   "))
+	
 	if answer_1 == 1:
 		print("Your answer is- Rock")
 	elif answer_1 == 2:
 		print("Your answer is- Paper")
 	elif answer_1 == 3:
 		print("Your answer is- Scissors")
-	AI_answer_1 = random.randint(1, 4)
+	
+	AI_answer_1 = random.randint(1, 3)
+	
 	if AI_answer_1 == 1:
 		print("AI's answer is- Rock")
 	elif AI_answer_1 == 2:
 		print("AI's answer is- Paper")
 	elif AI_answer_1 == 3:
 		print("AI's answer is- Scissors")
+
 	DisplayWinner(answer_1, AI_answer_1)
 	return answer_1, AI_answer_1
 
