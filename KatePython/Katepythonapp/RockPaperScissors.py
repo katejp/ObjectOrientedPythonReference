@@ -1,11 +1,9 @@
 import random
 
 def main():
-	player_wins = 0
-	ai_wins = 0
 	user_number = DisplayMenu()
 	if user_number == 1:
-		user_answer_1, ai_answer_1 = PlayBestOf3()
+		user_answer_1, ai_answer_1, player_round_wins, ai_round_wins = PlayBestOf3()
 	elif user_number == 2:
 		DisplayStats()
 	else:
@@ -25,62 +23,61 @@ def PlayBestOf3():
 	rounds_played = 0
 	player_round_wins = 0
 	ai_round_wins = 0
+	wins_necessary = 2
 	print("Game Instructions: Rock beats Scissors, Paper beats Rock, Scissors beats Paper.")
-	print("Enter 1- Rock, 2- Paper, 3- Scissors")
 	
-	while player_round_wins != 2 or ai_round_wins != 2:
+	while player_round_wins < 2 and ai_round_wins < 2:
 
 		# Play Round 
-		PlayRound()
-
-		# Display Result- modify rounds variables in playbestof3 function
-	#check playbestof3 variables for who wins- modify main function variables
+		answer_1 = input("Enter R, P or S:   ")
+		if answer_1 == "R":
+			print("Your answer is- Rock")
+		elif answer_1 == "P":
+			print("Your answer is- Paper")
+		elif answer_1 == "S":
+			print("Your answer is- Scissors")
 	
+		AI_answer_1 = random.choice(["R", "P", "S"])
+		if AI_answer_1 == "R":
+			print("AI's answer is- Rock")
+		elif AI_answer_1 == "P":
+			print("AI's answer is- Paper")
+		elif AI_answer_1 == "S":
+			print("AI's answer is- Scissors")
 
-
-def PlayRound():
+		player_round_wins, ai_round_wins = DisplayWinner(answer_1, AI_answer_1, player_round_wins, ai_round_wins)
+		print("Player Wins: ", player_round_wins)
+		print("AI Wins: ", ai_round_wins)
+		return answer_1, AI_answer_1, player_round_wins, ai_round_wins
 	
-	answer_1 = int(input("Enter number:   "))
-	
-	if answer_1 == 1:
-		print("Your answer is- Rock")
-	elif answer_1 == 2:
-		print("Your answer is- Paper")
-	elif answer_1 == 3:
-		print("Your answer is- Scissors")
-	
-	AI_answer_1 = random.randint(1, 3)
-	
-	if AI_answer_1 == 1:
-		print("AI's answer is- Rock")
-	elif AI_answer_1 == 2:
-		print("AI's answer is- Paper")
-	elif AI_answer_1 == 3:
-		print("AI's answer is- Scissors")
-
-	DisplayWinner(answer_1, AI_answer_1)
-	return answer_1, AI_answer_1
-
-
-def DisplayWinner(answer_1, AI_answer_1):
-	if answer_1 == 1 and AI_answer_1 == 1:
+def DisplayWinner(answer_1, AI_answer_1, player_round_wins, ai_round_wins):
+	if answer_1 == "R" and AI_answer_1 == "R":
 		print("Rock and Rock is a tie.")
-	elif answer_1 == 1 and AI_answer_1 == 2:
+	elif answer_1 == "R" and AI_answer_1 == "P":
 		print("Paper beats Rock. AI wins!")
-	elif answer_1 == 1 and AI_answer_1 == 3:
+		ai_round_wins += 1
+	elif answer_1 == "R" and AI_answer_1 == "S":
 		print("Rock beats Scissors. You win!")
-	elif answer_1 == 2 and AI_answer_1 == 1:
+		player_round_wins += 1
+	elif answer_1 == "P" and AI_answer_1 == "R":
 		print("Paper beats Rock. You win!")
-	elif answer_1 == 2 and AI_answer_1 == 2:
+		player_round_wins += 1
+	elif answer_1 == "P" and AI_answer_1 == "P":
 		print("Paper and Paper is a tie.")
-	elif answer_1 == 2 and AI_answer_1 == 3:
+	elif answer_1 == "P" and AI_answer_1 == "S":
 		print("Scissors beats Paper. AI wins!")
-	elif answer_1 == 3 and AI_answer_1 == 1:
+		ai_round_wins += 1
+	elif answer_1 == "S" and AI_answer_1 == "R":
 		print("Rock beats Scissors. AI wins!")
-	elif answer_1 == 3 and AI_answer_1 == 2:
+		ai_round_wins += 1
+	elif answer_1 == "S" and AI_answer_1 == "P":
 		print("Scissors beats Paper. You win!")
-	elif answer_1 == 3 and AI_answer_1 == 3:
+		player_round_wins += 1
+	elif answer_1 == "S" and AI_answer_1 == "S":
 		print("Scissors and Scissors is a tie.")
+
+	return player_round_wins, ai_round_wins
+		
 	
 main()
 	
