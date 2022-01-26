@@ -3,7 +3,7 @@ import random
 def main():
 	user_number = DisplayMenu()
 	if user_number == 1:
-		user_answer_1, ai_answer_1, player_round_wins, ai_round_wins = PlayBestOf3()
+		PlayBestOf3()
 	elif user_number == 2:
 		DisplayStats()
 	else:
