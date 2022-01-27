@@ -28,6 +28,9 @@
     <Compile Include="Ch4Exercise2.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Ch6Ex4.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="module1.py">
       <SubType>Code</SubType>
     </Compile>
