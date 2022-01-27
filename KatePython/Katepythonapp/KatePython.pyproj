@@ -5,7 +5,7 @@
     <ProjectGuid>dedea458-9d7c-4f37-b781-57d5a0811029</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>module1.py</StartupFile>
+    <StartupFile>Ch6Ex7.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,13 +25,13 @@
     <Compile Include="Ch4Ex1.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Ch4Exercise2.py">
+    <Compile Include="Ch4Ex2.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Ch6Ex4.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="module1.py">
+    <Compile Include="Ch6Ex7.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="TimeForLoops.py">
@@ -61,7 +61,7 @@
     <Compile Include="MasterTicket2.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Ch3Exercise3.py">
+    <Compile Include="Ch3Ex3.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DotNotationFormatting.py">
@@ -70,10 +70,7 @@
     <Compile Include="EvenOddNumbers.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Ch3Exercise4.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="module4.py">
+    <Compile Include="Ch3Ex4.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="FunctionMainWhileLoopsPractice.py">
@@ -85,7 +82,7 @@
     <Compile Include="Ch3FunctionMainPractice.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Ch3Exercise1and2.py">
+    <Compile Include="Ch3Ex1and2.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="RaisingExceptions2.py">
